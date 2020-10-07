@@ -1,13 +1,11 @@
 package ar.edu.utn.frc;
 import java.net.URI;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
@@ -27,7 +25,6 @@ public class App {
     private static final String uriBase = endpoint + "vision/v2.1/ocr";
 
     private static String imageToAnalyze = null; 
-    		//"http://www.investigacion.frc.utn.edu.ar/computos/FotoCarnet.jpg";
     
     private static String language = "es";
 
