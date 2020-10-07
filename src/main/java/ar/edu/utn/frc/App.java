@@ -1,6 +1,6 @@
 package ar.edu.utn.frc;
-import java.net.URI;
 
+import java.net.URI;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -20,7 +20,6 @@ public class App {
     // After setting, close and then re-open your command shell or project for the changes to take effect.
     static String subscriptionKey = System.getenv("COMPUTER_VISION_SUBSCRIPTION_KEY");
     static String endpoint = System.getenv("COMPUTER_VISION_ENDPOINT");
-
 
     private static final String uriBase = endpoint + "vision/v2.1/ocr";
 
@@ -91,7 +90,6 @@ public class App {
                 	setLanguage(parts[1]);
                 	System.out.println("Lenguaje definido : " + getLanguage());                	
                 }
-
                 
                 if ("url".equalsIgnoreCase(parts[0])) {
                 	String laUrl = parts[1];                 	
@@ -109,10 +107,8 @@ public class App {
                         // Display error message.
                     	System.out.println("Url de la imagen mal definida");
                     	return 0;
-                    } 
-                	
+                    }                 	
                 }
-
             } 
     				
     	}
